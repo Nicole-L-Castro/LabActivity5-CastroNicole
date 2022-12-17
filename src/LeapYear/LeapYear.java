@@ -13,7 +13,7 @@ public LeapYear(){
         @Override
         public void actionPerformed(ActionEvent e) {
             try{
-                int year = Integer.parseInt(tfNumber.getText());
+                int year = Integer.parseInt(tfYear.getText());
                 if(year <= 0){
                     throw new Exception("Invalid Input");
                 }
