@@ -30,12 +30,10 @@ public LeapYear(){
 }
 private boolean isPrime(int year){
     if( (year % 4 == 0) && (year % 100 != 0) || (year%400==0) ){
-        JOptionPane.showMessageDialog(null, "Leap Year");
         return true;
     }
-    else {
-        JOptionPane.showMessageDialog(null, "Not a Leap Year");
-        return true;
+    else {;
+        return false;
     }
 }
     public static void main(String[] args) {
