@@ -11,7 +11,6 @@ public class Calculator extends JFrame{
     private JComboBox comboBox1;
     private JButton computeResultButton;
     private JTextField textResult;
-
 public Calculator(){
     computeResultButton.addActionListener(new ActionListener() {
         @Override
@@ -47,7 +46,6 @@ public Calculator(){
         }
     });
 }
-
     public static void main(String[] args) {
         Calculator calc = new Calculator();
         calc.setTitle("Simple Calculator");
