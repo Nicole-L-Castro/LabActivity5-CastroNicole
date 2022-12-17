@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 
 public class LeapYear extends JFrame{
     private JPanel panel1;
-    private JTextField textField1;
-    private JButton checkButton;
+    private JTextField tfYear;
+    private JButton btnYearChecker;
 public LeapYear(){
-    btnLeapYearChecker.addActionListener(new ActionListener(){
+    btnYearChecker.addActionListener(new ActionListener(){
         @Override
         public void actionPerformed(ActionEvent e) {
             try{
@@ -28,19 +28,15 @@ public LeapYear(){
         }
     });
 }
-private boolean isPrime(int number){
-    if(year == 2){
+private boolean isPrime(int year){
+    if( (year % 4 == 0) && (year % 100 != 0) || (year%400==0) ){
+        JOptionPane.showMessageDialog(null, "Leap Year");
         return true;
     }
-    if(year % 2 == 0){
-        return false;
+    else {
+        JOptionPane.showMessageDialog(null, "Not a Leap Year");
+        return true;
     }
-    for(int i=3; i<=Math.sqrt(number); i += 2){
-        if(year % 1 == 0){
-            return false;
-        }
-    }
-    return true;
 }
     public static void main(String[] args) {
         LeapYear checker = new LeapYear();
