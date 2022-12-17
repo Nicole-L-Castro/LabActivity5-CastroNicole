@@ -8,7 +8,15 @@ public class Calculator {
     private JComboBox comboBox1;
     private JButton computeResultButton;
 
+public Calculator{
 
 }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+
 
 
