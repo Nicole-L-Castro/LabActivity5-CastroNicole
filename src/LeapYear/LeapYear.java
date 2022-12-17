@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 public class LeapYear extends JFrame{
     private JPanel panel1;
     private JTextField tfYear;
-    private JButton btnYearChecker;
+    private JButton btnCheckYear;
 public LeapYear(){
-    btnYearChecker.addActionListener(new ActionListener(){
+    btnCheckYear.addActionListener(new ActionListener(){
         @Override
         public void actionPerformed(ActionEvent e) {
             try{
