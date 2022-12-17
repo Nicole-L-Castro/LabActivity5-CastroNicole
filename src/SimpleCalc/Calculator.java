@@ -49,7 +49,12 @@ public Calculator(){
 }
 
     public static void main(String[] args) {
-
+        Calculator calc = new Calculator();
+        calc.setTitle("Simple Calculator");
+        calc.setContentPane(calc.panel1);
+        calc.setSize(600, 300);
+        calc.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        calc.setVisible(true);
     }
 }
 
